@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partials/head.ejs', {css:['style.css', 'filme.css']})%>
+<body>
+    <header>
+        <div class="container">
+            <div id="logo">Filnemateca</div>
+            <form>
+                <input type="search" name="busca" id="busca">
+            </form>
+        </div>
+    </header>
+    <main class="container">
+        <img src="/img/cartazes/<%=filme.cartaz%>" alt="<%=filme.titulo%>">
+        <aside>
+            <span class="titulo"><%=filme.titulo%></span>
+            <span class="duracao">Duração: 110min></span>
+            <span class="censura">Censura: <%=filme.censura%> anos</span>
+            <span class="generos"><%=filme.generos%></span>
+            <span class="sinopse"><%=filme.sinopse%></span>
+        </aside>
+    </main>
+</body>
+</html>
+

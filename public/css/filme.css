@@ -10,10 +10,6 @@ main.container img{
     width: 100%;
 }
 
-main.container aside {
-
-}
-
 main.container aside span{
     display: block;
 }
